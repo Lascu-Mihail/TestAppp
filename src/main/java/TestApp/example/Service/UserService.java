@@ -1,20 +1,14 @@
-package TestApp.example.TestApp.Service;
+package TestApp.example.Service;
 
-import TestApp.example.TestApp.Entity.User;
-
-import javax.management.relation.Role;
+import TestApp.example.Entity.Role;
+import TestApp.example.Entity.User;
 import java.util.List;
 
-
-public interface UserService{
-
+public interface UserService {
     User saveUser(User user);
     Role saveRole(Role role);
-    void addRoleToUser(String username,String roleName);
+    void addRoleToUser(String username, String roleName);
     User getUser(String username);
-    List<User>userList();
-
-
-
+    List<User> getUsers();
 }
 

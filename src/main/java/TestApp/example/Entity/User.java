@@ -1,9 +1,12 @@
-package TestApp.example.TestApp.Entity;
+package TestApp.example.Entity;
 
-import lombok.*;
-import javax.management.relation.Role;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 
 
@@ -11,15 +14,20 @@ import java.util.Collection;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class User  {
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
     private String name;
+
     private String username;
+
     private String password;
 
     @ManyToMany(fetch = FetchType.EAGER)
-    private Collection<Role>roles = new ArrayList<>();
+    private Collection<Role> roleCollection = new ArrayList<>();
+
+
 }
