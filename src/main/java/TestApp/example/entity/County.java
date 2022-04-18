@@ -1,17 +1,17 @@
-package TestApp.example.Entity;
+package TestApp.example.entity;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name = "locality")
+@Table(name = "county")
 public class Locality {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
-    @Column(name = "locality_name")
-    private String localityName;
+    @Column(name = "county_name")
+    private String countyName;
     @Column(name = "county_code")
     private String countyCode;
 
@@ -23,12 +23,12 @@ public class Locality {
         this.id = id;
     }
 
-    public String getLocalityName() {
-        return localityName;
+    public String getCountyName() {
+        return countyName;
     }
 
-    public void setLocalityName(String localityName) {
-        this.localityName = localityName;
+    public void setCountyName(String countyName) {
+        this.countyName = countyName;
     }
 
     public String getCountyCode() {
@@ -41,9 +41,9 @@ public class Locality {
 
     @Override
     public String toString() {
-        return "Locality{" +
+        return "County{" +
                 "id=" + id +
-                ", localityName='" + localityName + '\'' +
+                ", countyName='" + countyName + '\'' +
                 ", countyCode='" + countyCode + '\'' +
                 '}';
     }

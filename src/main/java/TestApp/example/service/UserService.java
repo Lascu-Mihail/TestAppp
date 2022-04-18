@@ -1,7 +1,7 @@
-package TestApp.example.Service;
+package TestApp.example.service;
 
-import TestApp.example.Entity.Role;
-import TestApp.example.Entity.User;
+import TestApp.example.entity.Role;
+import TestApp.example.entity.User;
 import java.util.List;
 
 public interface UserService {

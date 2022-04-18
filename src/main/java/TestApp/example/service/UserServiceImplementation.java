@@ -1,9 +1,9 @@
-package TestApp.example.Service;
+package TestApp.example.service;
 
-import TestApp.example.Entity.Role;
-import TestApp.example.Entity.User;
-import TestApp.example.Repository.RoleRepository;
-import TestApp.example.Repository.UserRepository;
+import TestApp.example.entity.Role;
+import TestApp.example.entity.User;
+import TestApp.example.repository.RoleRepository;
+import TestApp.example.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

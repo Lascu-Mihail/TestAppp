@@ -1,8 +1,8 @@
-package TestApp.example.Controller;
+package TestApp.example.controller;
 
-import TestApp.example.Entity.Role;
-import TestApp.example.Entity.User;
-import TestApp.example.Service.UserService;
+import TestApp.example.entity.Role;
+import TestApp.example.entity.User;
+import TestApp.example.service.UserService;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.interfaces.DecodedJWT;

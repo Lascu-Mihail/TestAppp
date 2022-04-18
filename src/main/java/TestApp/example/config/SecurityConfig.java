@@ -1,4 +1,4 @@
-package TestApp.example.Config;
+package TestApp.example.config;
 
 import TestApp.example.filter.CustomAuthenticationFilter;
 import TestApp.example.filter.CustomAuthorizationFilter;

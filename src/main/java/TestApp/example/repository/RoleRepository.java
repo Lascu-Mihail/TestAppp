@@ -1,9 +1,8 @@
-package TestApp.example.Repository;
+package TestApp.example.repository;
 
 
-import TestApp.example.Entity.Role;
+import TestApp.example.entity.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 
 
 public interface RoleRepository extends JpaRepository<Role,Long> {

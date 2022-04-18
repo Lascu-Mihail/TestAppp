@@ -1,8 +1,8 @@
 package TestApp.example;
 
-import TestApp.example.Entity.Role;
-import TestApp.example.Entity.User;
-import TestApp.example.Service.UserService;
+import TestApp.example.entity.Role;
+import TestApp.example.entity.User;
+import TestApp.example.service.UserService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
